@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estudia guitarra con Pili Castillo</title>
+<style>
+:root{--bg:#070707;--panel:#11100d;--gold:#d7ad63;--gold2:#f0cc83;--text:#f7f3ea;--muted:#b9b4aa;--line:#49371d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{max-width:1080px;margin:auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:#070707ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{width:165px;max-height:58px;object-fit:contain}.nav a{font-size:.85rem;font-weight:800;margin-left:22px}.nav a:hover{color:var(--gold2)}
+.hero{min-height:650px;display:flex;align-items:center;background:radial-gradient(circle at 75% 35%,#3a260f 0,#171109 25%,#070707 62%);border-bottom:1px solid var(--line)}
+.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:80px 0}.ey{color:var(--gold2);font-size:.72rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.hero h1{font:400 clamp(3.2rem,7vw,6rem)/.96 Georgia,serif;margin:16px 0}.hero h1 span{color:var(--gold2);font-style:italic}.hero p{font-size:1.15rem;color:var(--muted);max-width:600px}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 22px;border:1px solid var(--gold);font-weight:900;border-radius:3px}.primary{background:var(--gold);color:#111}.logoBox{min-height:410px;border:1px solid #765824;background:radial-gradient(circle,#21170b,#090909 68%);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:35px}.logoBox img{width:min(90%,390px)}.note{color:var(--gold2);font-size:.72rem;letter-spacing:.2em;margin-top:18px;text-align:center}
+section{padding:70px 0}.center{text-align:center}.center p{color:var(--muted);max-width:650px;margin:10px auto 32px}.goldline{height:2px;width:50px;background:var(--gold);margin:18px auto}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:4px}.mini h3{font:400 1.35rem Georgia,serif}.mini p{color:var(--muted);margin-bottom:0}
+.packs{background:#0c0b09;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.packgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pack{background:#11100d;border:1px solid var(--line);padding:27px;border-radius:4px}.pack.featured{border:2px solid var(--gold)}.num{color:#111;background:var(--gold);display:inline-block;padding:4px 10px;font-size:.68rem;font-weight:900}.pack h3{font:400 1.5rem Georgia,serif}.pack p,.pack li{color:var(--muted)}.price{font:400 2rem Georgia,serif;color:var(--gold2);margin-top:15px}
+.catalog{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.chip{border:1px solid var(--line);padding:18px;background:#0e0d0b;text-align:center}.chip strong{display:block;font-family:Georgia,serif}.chip span{font-size:.8rem;color:var(--muted)}
+.message{background:linear-gradient(135deg,#191208,#0a0a09);border:1px solid #6d5127;text-align:center;padding:55px 25px}.message h2{font:400 2.5rem Georgia,serif}.message p{color:var(--muted);max-width:620px;margin:10px auto 25px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.nav a{display:none}.heroGrid,.three,.packgrid,.catalog{grid-template-columns:1fr}.heroGrid{padding:55px 0}.logoBox{min-height:320px;order:-1}.catalog{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.catalog{grid-template-columns:1fr}.hero h1{font-size:3.4rem}}
+</style>
+<style>
+.chip{min-height:155px;display:flex;flex-direction:column;justify-content:space-between}
+.chip strong{font-size:1.05rem}
+.chip b{display:block;color:var(--gold2);font:400 1.35rem Georgia,serif;margin-top:12px}
+</style>
+<style>
+.courseBox{max-width:850px;margin:0 auto;background:#11100d;border:1px solid #765824;border-radius:6px;overflow:hidden;box-shadow:0 25px 70px #0008}
+.courseHead{padding:28px;display:flex;justify-content:space-between;gap:20px;align-items:center;background:linear-gradient(135deg,#1c150b,#0e0d0b);border-bottom:1px solid #49371d}
+.courseHead h3{font:400 1.7rem Georgia,serif;margin:12px 0 5px}.courseHead p{margin:0;color:var(--muted);font-size:.9rem}.coursePrice{font:400 2rem Georgia,serif;color:var(--gold2);white-space:nowrap}
+.lesson{padding:18px 25px;border-bottom:1px solid #2e2417}.lesson>div{display:grid;grid-template-columns:1.2fr 1fr auto;gap:15px;align-items:center}.lesson span{color:var(--muted);font-size:.85rem}.lesson b{color:#8e877a;font-size:.78rem;font-weight:700}
+.supportBox{max-width:850px;margin:25px auto 0;padding:30px;text-align:center;border:1px solid #624a27;background:linear-gradient(135deg,#191208,#0a0a09)}.supportBox h3{font:400 1.7rem Georgia,serif;margin:8px}.supportBox p{color:var(--muted);max-width:650px;margin:0 auto 20px}
+@media(max-width:700px){.courseHead{flex-direction:column;align-items:flex-start}.lesson>div{grid-template-columns:1fr}.lesson b{display:block}}
+</style>
+
+<style>
+.courseSecondary{margin-top:22px}
+.courseSecondary .courseHead{background:#0e0d0b}
+</style>
+
+<style>
+.aboutSection{padding:80px 0;background:radial-gradient(circle at 80% 35%,#25180a 0,#0b0a08 38%,#070707 72%);border-top:1px solid #49371d;border-bottom:1px solid #49371d}
+.aboutGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.aboutText h2{font:400 clamp(2.4rem,5vw,4.2rem)/1.05 Georgia,serif;margin:14px 0;color:var(--gold2)}
+.aboutText p{color:var(--muted);font-size:1.02rem;max-width:620px}
+.aboutText strong{color:var(--gold2)}
+.aboutLine{margin:18px 0}
+.aboutPhotoWrap{position:relative;border:1px solid #765824;background:#0b0b0a;padding:10px;box-shadow:0 25px 80px #000}
+.aboutPhotoWrap:after{content:"";position:absolute;inset:20px;border:1px solid #d7ad6340;pointer-events:none}
+.aboutPhotoWrap img{display:block;width:100%;height:auto;max-height:700px;object-fit:cover;object-position:center}
+.quoteBox{margin-top:28px;padding:24px;border:1px solid #765824;background:#0c0b09;color:#f5f0e8;font:italic 1.55rem Georgia,serif;text-align:center}
+.faithBox{margin-top:16px;padding:20px;border:1px solid #624a27;background:linear-gradient(135deg,#191208,#0a0a09);color:var(--gold2);text-align:center;font:1.05rem Georgia,serif}
+.faithBox em{color:#f5f0e8}
+.aboutFeatures{margin-top:35px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #2e2417;background:#0b0b0a}
+.aboutFeatures>div{padding:20px;border-right:1px solid #2e2417}
+.aboutFeatures>div:last-child{border-right:0}
+.aboutFeatures strong{display:block;color:var(--gold2);font-size:.86rem}
+.aboutFeatures span{display:block;color:var(--muted);font-size:.78rem;margin-top:6px}
+@media(max-width:800px){
+ .aboutGrid{grid-template-columns:1fr}
+ .aboutPhotoWrap{order:-1}
+ .aboutFeatures{grid-template-columns:1fr 1fr}
+ .aboutFeatures>div:nth-child(2){border-right:0}
+ .aboutFeatures>div:nth-child(-n+2){border-bottom:1px solid #2e2417}
+}
+@media(max-width:480px){.aboutFeatures{grid-template-columns:1fr}.aboutFeatures>div{border-right:0;border-bottom:1px solid #2e2417}.aboutFeatures>div:last-child{border-bottom:0}}
+</style>
+
+<style>
+:root{--bg:#060606;--panel:#11100d;--gold:#d7ad63;--gold2:#f3cf8a;--text:#f7f3ea;--muted:#b9b4aa;--line:#49371d}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
+.navlinks a{font-size:.78rem}
+.hero{min-height:720px}
+.heroGrid{grid-template-columns:1.05fr .95fr;gap:65px}
+.hero h1{font-size:clamp(3.5rem,7vw,6.5rem)}
+.lead{font-size:1.2rem!important;line-height:1.65}
+.heroProof{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.heroProof span{border:1px solid #624a27;padding:8px 11px;font-size:.78rem;color:var(--gold2);background:#0e0d0b}
+.heroPhoto{position:relative;border:1px solid #765824;padding:10px;background:#0b0b0a;box-shadow:0 25px 80px #000}
+.heroPhoto img{display:block;width:100%;height:560px;object-fit:cover;object-position:center}
+.photoBadge{position:absolute;bottom:26px;left:25px;right:25px;text-align:center;background:#070707e8;border:1px solid #765824;padding:12px;color:var(--gold2);font-size:.72rem;letter-spacing:.16em}
+.results{background:#0c0b09}
+.icon{font-size:1.6rem}
+.method{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.methodGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
+.goldline.left{margin-left:0}
+.steps{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.steps div{display:flex;gap:12px;align-items:flex-start;border:1px solid #2e2417;padding:17px;background:#0b0b0a}
+.steps b{color:#111;background:var(--gold);padding:3px 7px;font-size:.7rem}
+.steps span{color:var(--muted);font-size:.9rem}.steps strong{color:var(--text)}
+.methodCard{border:1px solid #765824;background:linear-gradient(135deg,#191208,#0a0a09);padding:34px}
+.methodCard h3{font:400 1.8rem Georgia,serif}.methodCard p{color:var(--muted);border-bottom:1px solid #2e2417;padding-bottom:12px}
+.packgrid.five{grid-template-columns:repeat(5,1fr)}
+.pack{display:flex;flex-direction:column}.pack p{min-height:72px}.packBtn{margin-top:auto;border:1px solid #765824;padding:10px;text-align:center;color:var(--gold2);font-size:.75rem;font-weight:800}
+.courseDetails{padding:40px 0;background:#090806}
+.detailCard{max-width:1000px;margin:20px auto;background:#11100d;border:1px solid #49371d}
+.detailHead{padding:25px 28px;display:flex;justify-content:space-between;gap:20px;align-items:center;background:linear-gradient(135deg,#1b140a,#0d0c0a);border-bottom:1px solid #49371d}
+.detailHead h3{font:400 1.7rem Georgia,serif;margin:10px 0 4px}.detailHead p{margin:0;color:var(--muted)}.detailHead>strong{font:400 2rem Georgia,serif;color:var(--gold2);white-space:nowrap}
+.detailCols{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.detailCols>div{padding:24px;border-right:1px solid #2e2417}.detailCols>div:last-child{border-right:0}.detailCols h4{margin:0 0 10px;color:var(--gold2);font-size:.95rem}.detailCols p{color:var(--muted);font-size:.9rem}
+.personal{padding:70px 0}
+.personalBox{text-align:center;padding:65px 25px;border:1px solid #765824;background:radial-gradient(circle at 50% 0,#24180b,#0a0a09 65%)}
+.personalBox h2{max-width:720px;margin:12px auto}.personalBox p{max-width:650px;margin:12px auto 28px;color:var(--muted)}
+.aboutSection{background:radial-gradient(circle at 20% 30%,#24170a 0,#0b0a08 40%,#070707 75%)}
+.aboutGrid{grid-template-columns:.85fr 1.15fr}
+.aboutPhotoWrap img{max-height:680px}
+.faq{border-top:1px solid var(--line)}
+.faqgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:900px;margin:auto}
+.faqgrid>div{border:1px solid #2e2417;padding:22px;background:#0b0b0a}.faqgrid h3{font:400 1.15rem Georgia,serif;margin:0 0 8px}.faqgrid p{color:var(--muted);margin:0;font-size:.9rem}
+.contact{padding-top:30px}
+@media(max-width:1050px){.packgrid.five{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.heroGrid,.methodGrid,.aboutGrid{grid-template-columns:1fr}.heroPhoto{order:-1}.heroPhoto img{height:420px}.navlinks{display:none}.steps,.detailCols,.faqgrid{grid-template-columns:1fr}.detailCols>div{border-right:0;border-bottom:1px solid #2e2417}.detailHead{align-items:flex-start;flex-direction:column}.detailHead>strong{font-size:1.7rem}.packgrid.five{grid-template-columns:1fr}}
+</style>
+
+
+<style>
+.packBtn.buy{background:var(--gold);color:#111;border-color:var(--gold);font-weight:900}
+.packLink{display:block;text-align:center;color:var(--muted);font-size:.72rem;margin-top:9px}
+.purchase{padding:80px 0;background:#0c0b09;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.purchaseGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:1050px;margin:30px auto 18px}
+.purchaseGrid>div{border:1px solid #49371d;background:#11100d;padding:22px;text-align:center}
+.purchaseGrid span{display:block;color:var(--gold2);font-size:.72rem;font-weight:900;letter-spacing:.1em}
+.purchaseGrid strong{display:block;font:400 1.65rem Georgia,serif;color:#f7f3ea;margin:10px 0 18px}
+.purchaseGrid .btn{width:100%;padding:10px 8px;font-size:.72rem}
+.secureNote{text-align:center;color:var(--muted);font-size:.82rem;margin-top:20px}
+@media(max-width:1050px){.purchaseGrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.purchaseGrid{grid-template-columns:1fr}}
+</style>
+
+</head>
+
+<body>
+<nav>
+  <div class="wrap nav">
+    <a href="#inicio"><img class="logo" src="logo-pili-castillo.png" alt="Escuela Pili Castillo"></a>
+    <div class="navlinks">
+      <a href="#metodo">MI MÉTODO</a>
+      <a href="#packs">CURSOS</a>
+      <a href="#sobre-mi">SOBRE MÍ</a>
+      <a href="#faq">PREGUNTAS</a>
+    </div>
+  </div>
+</nav>
+
+<header id="inicio" class="hero">
+  <div class="wrap heroGrid">
+    <div>
+      <div class="ey">ESCUELA PILI CASTILLO · GUITARRA ONLINE</div>
+      <h1>Aprende guitarra.<br><span>Toca de verdad.</span></h1>
+      <p class="lead">Un método práctico para aprender guitarra desde cero, descubrir el flamenco y construir tu propio repertorio, a tu ritmo y desde donde quieras.</p>
+      <div class="heroProof"><span>🎸 Técnica</span><span>🎵 Ritmos</span><span>🔥 Flamenco</span><span>🎼 Armonía</span></div>
+      <div class="buttons">
+        <a class="btn primary" href="#packs">VER LOS CURSOS</a>
+        <a class="btn" href="#sobre-mi">CONÓCEME</a>
+      </div>
+    </div>
+    <div class="heroPhoto">
+      <img src="pili-castillo.jpg" alt="Pili Castillo con su guitarra">
+      <div class="photoBadge">APRENDE · PRACTICA · TOCA</div>
+    </div>
+  </div>
+</header>
+
+<section class="results">
+  <div class="wrap">
+    <div class="center">
+      <div class="ey">NO SOLO VER VÍDEOS</div>
+      <h2>Aprende haciendo música</h2>
+      <div class="goldline"></div>
+      <p>La idea es sencilla: aprender una técnica, practicarla y llevarla a la música que te gusta.</p>
+    </div>
+    <div class="three">
+      <div class="mini"><div class="icon">🎸</div><h3>Aprende la técnica</h3><p>Acordes, arpegios, escalas, rasgueos, ligados y recursos flamencos.</p></div>
+      <div class="mini"><div class="icon">🥁</div><h3>Consigue ritmo</h3><p>Pop, balada, rock, sevillanas, rumbas y diferentes palos flamencos.</p></div>
+      <div class="mini"><div class="icon">🎵</div><h3>Toca canciones</h3><p>Aplica lo aprendido a repertorio conocido y avanza hacia piezas más exigentes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="metodo" class="method">
+  <div class="wrap">
+    <div class="methodGrid">
+      <div>
+        <div class="ey">MI MÉTODO</div>
+        <h2>Aprende · Practica · Toca · Avanza</h2>
+        <div class="goldline left"></div>
+        <p>He creado esta escuela para que no tengas que limitarte a memorizar ejercicios. Quiero que entiendas lo que haces y que puedas llevarlo a la guitarra.</p>
+        <div class="steps">
+          <div><b>01</b><span><strong>Aprende</strong> una técnica de forma clara.</span></div>
+          <div><b>02</b><span><strong>Practica</strong> con ejercicios concretos.</span></div>
+          <div><b>03</b><span><strong>Toca</strong> aplicándolo a ritmos y canciones.</span></div>
+          <div><b>04</b><span><strong>Avanza</strong> hacia nuevos niveles y recursos.</span></div>
+        </div>
+      </div>
+      <div class="methodCard">
+        <div class="ey">EN CADA CURSO</div>
+        <h3>Tu camino está marcado</h3>
+        <p>🎥 Clases grabadas</p>
+        <p>🎼 Material y TAB cuando corresponda</p>
+        <p>🎯 Ejercicios para practicar</p>
+        <p>🎵 Repertorio para aplicar lo aprendido</p>
+        <p>💬 Acompañamiento y “Una duda con Pili”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="packs" class="packs">
+  <div class="wrap">
+    <div class="center">
+      <div class="ey">ELIGE TU CAMINO</div>
+      <h2>Mis cursos</h2>
+      <div class="goldline"></div>
+      <p>Cinco etapas para acompañarte desde tus primeros acordes hasta la armonía y un repertorio más avanzado.</p>
+    </div>
+
+    <div class="packgrid five">
+      <article class="pack featured">
+        <span class="num">PACK 1</span>
+        <h3>Primeros pasos con la guitarra</h3>
+        <p>🎸 Técnica · 🥁 Ritmos · 🎵 Primeras canciones</p>
+        <div class="price">14,99 €</div>
+        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 14,99 €</a><a class="packLink" href="#pack1">Ver contenido</a>
+      </article>
+      <article class="pack">
+        <span class="num">PACK 2</span>
+        <h3>Ritmos y palos flamencos</h3>
+        <p>🔥 Sevillanas · Tanguillos · Alegrías · Rumbas</p>
+        <div class="price">19,99 €</div>
+        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 19,99 €</a><a class="packLink" href="#pack2">Ver contenido</a>
+      </article>
+      <article class="pack">
+        <span class="num">PACK 3</span>
+        <h3>Nivel medio y avanzado</h3>
+        <p>🎼 Repertorio flamenco y grandes guitarristas</p>
+        <div class="price">34,99 €</div>
+        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 34,99 €</a><a class="packLink" href="#pack3">Ver contenido</a>
+      </article>
+      <article class="pack">
+        <span class="num">PACK 4</span>
+        <h3>Armonía aplicada a canciones</h3>
+        <p>🎹 Aprende armonía a través del repertorio</p>
+        <div class="price">39,99 €</div>
+        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 39,99 €</a><a class="packLink" href="#pack4">Ver contenido</a>
+      </article>
+      <article class="pack">
+        <span class="num">PACK 5</span>
+        <h3>Grandes canciones</h3>
+        <p>🌎 Pop internacional y rock para tocar</p>
+        <div class="price">44,99 €</div>
+        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 44,99 €</a><a class="packLink" href="#pack5">Ver contenido</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="courseDetails">
+  <div class="wrap">
+    <div id="pack1" class="detailCard">
+      <div class="detailHead"><div><span class="num">PACK 1</span><h3>Primeros pasos con la guitarra</h3><p>Construye una base sólida y empieza a tocar canciones.</p></div><strong>14,99 €</strong></div>
+      <div class="detailCols">
+        <div><h4>🎯 Técnica fundamental</h4><p>Acordes básicos · Acordes básicos con ritmo · Arpegios principales · Estudios de arpegios · Ejercicios de agilidad · Escala pentatónica · Escalas flamencas · Abanico · Golpe de pulgar · Ligados flamencos</p></div>
+        <div><h4>🥁 Ritmos</h4><p>Ritmo de pop · Ritmo de balada · Ritmo de rock · Sevillanas · Ejercicios de rasgueo por sevillanas</p></div>
+        <div><h4>🎵 Primeras canciones</h4><p>Zombie — The Cranberries · Triana · Paula Rojo · Aitana · Malú</p></div>
+      </div>
+    </div>
+
+    <div id="pack2" class="detailCard">
+      <div class="detailHead"><div><span class="num">PACK 2</span><h3>Ritmos y palos flamencos</h3><p>Empieza a entrar en el lenguaje del flamenco.</p></div><strong>19,99 €</strong></div>
+      <div class="detailCols">
+        <div><h4>💃 Sevillanas</h4><p>Sevillanas · Sevillanas con punteo</p></div>
+        <div><h4>🎶 Tanguillos de Cádiz</h4><p>Ritmo de tanguillos · Punteo de tanguillos</p></div>
+        <div><h4>🌹 Alegrías</h4><p>Ritmo de alegrías · Falseta de alegrías</p></div>
+        <div><h4>🔥 Rumbas</h4><p>Ritmo de rumba · Arpegios y recursos para rumba · Popurrí de rumbas</p></div>
+      </div>
+    </div>
+
+    <div id="pack3" class="detailCard">
+      <div class="detailHead"><div><span class="num">PACK 3</span><h3>Nivel medio y avanzado</h3><p>Repertorio y recursos para seguir creciendo.</p></div><strong>34,99 €</strong></div>
+      <div class="detailCols">
+        <div><h4>🎼 Repertorio</h4><p>Entre dos aguas — Paco de Lucía · Río Ancho — Paco de Lucía · Tico Tico — Paco de Lucía · Roma — Vicente Amigo · Tres notas para decir te quiero — Vicente Amigo</p></div>
+        <div><h4>🔥 Falsetas y recursos</h4><p>Tangos y falsetas — Tomatito · Falsetas por bulerías — Tomatito · Agua Marina — Paco Cepero</p></div>
+      </div>
+    </div>
+
+    <div id="pack4" class="detailCard">
+      <div class="detailHead"><div><span class="num">PACK 4</span><h3>Armonía aplicada a canciones</h3><p>Entiende la armonía mientras trabajas repertorio.</p></div><strong>39,99 €</strong></div>
+      <div class="detailCols">
+        <div><h4>🎹 Repertorio español</h4><p>Alejandro Sanz · Manuel Carrasco · La Barbería del Sur · Niña Pastori</p></div>
+        <div><h4>🎤 Canción melódica</h4><p>Armando Manzanero · Luis Miguel</p></div>
+        <div><h4>🧠 Armonía</h4><p>Acordes armonizados · Progresiones · Tonalidades · Recursos para enriquecer acompañamientos</p></div>
+      </div>
+    </div>
+
+    <div id="pack5" class="detailCard">
+      <div class="detailHead"><div><span class="num">PACK 5</span><h3>Grandes canciones</h3><p>Repertorio internacional y rock con acordes que todo guitarrista conoce.</p></div><strong>44,99 €</strong></div>
+      <div class="detailCols">
+        <div><h4>🎤 Pop internacional</h4><p>Queen · Michael Jackson · Lady Gaga · Shakira · Bonnie Tyler · Tina Turner</p></div>
+        <div><h4>🎸 Rock</h4><p>Bon Jovi · AC/DC · Extremoduro · Nirvana · Guns N’ Roses</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="personal">
+  <div class="wrap">
+    <div class="personalBox">
+      <div class="ey">UNA DUDA CON PILI</div>
+      <h2>No estás solo/a delante de la pantalla.</h2>
+      <p>Cuando necesites una explicación, una orientación o ayuda para superar un bloqueo, la escuela está pensada para acompañarte.</p>
+      <a class="btn" href="#contacto">QUIERO SABER MÁS</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre-mi" class="aboutSection">
+  <div class="wrap aboutGrid">
+    <div class="aboutPhotoWrap"><img src="pili-castillo.jpg" alt="Pili Castillo con su guitarra"></div>
+    <div class="aboutText">
+      <div class="ey">SOBRE MÍ</div>
+      <h2>Hola, soy Pili Castillo.</h2>
+      <div class="goldline left"></div>
+      <p>Soy guitarrista y profesora de guitarra. He creado esta escuela para compartir contigo mi forma de <strong>aprender y disfrutar</strong> de la música.</p>
+      <p>Quiero que puedas empezar desde cero, mejorar tu técnica, descubrir el flamenco y tocar canciones que realmente te gustan, sin importar tu edad o tu nivel.</p>
+      <p>Mi objetivo es que cada clase sea práctica, clara y cercana.</p>
+      <div class="quoteBox">“Nunca es tarde para empezar a hacer música.”</div>
+      <div class="faithBox">Dios me dio la música como un regalo,<br><em>y hoy quiero compartir ese regalo contigo.</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="center"><div class="ey">ANTES DE EMPEZAR</div><h2>Preguntas frecuentes</h2><div class="goldline"></div></div>
+    <div class="faqgrid">
+      <div><h3>¿Puedo empezar desde cero?</h3><p>Sí. El Pack 1 está pensado para construir una base desde los primeros acordes.</p></div>
+      <div><h3>¿Necesito experiencia previa?</h3><p>No. Puedes avanzar siguiendo el recorrido de los packs.</p></div>
+      <div><h3>¿Las clases son grabadas?</h3><p>La escuela está pensada para aprender con clases grabadas y material de apoyo.</p></div>
+      <div><h3>¿Puedo avanzar a mi ritmo?</h3><p>Sí. Tú decides cuándo practicar y cuándo pasar al siguiente contenido.</p></div>
+      <div><h3>¿Habrá material para practicar?</h3><p>Sí, según cada clase y pack habrá material de apoyo y TAB cuando corresponda.</p></div>
+      <div><h3>¿Y si me atasco?</h3><p>Podrás consultar la opción “Una duda con Pili” cuando esté disponible.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="comprar" class="purchase">
+  <div class="wrap">
+    <div class="center">
+      <div class="ey">CUANDO ESTÉS PREPARADO/A</div>
+      <h2>Elige tu pack y empieza</h2>
+      <div class="goldline"></div>
+      <p>Los botones de compra quedarán conectados al sistema de pago cuando configuremos la cuenta de venta. No habrá cuota mensual por la web.</p>
+    </div>
+    <div class="purchaseGrid">
+      <div><span>PACK 1</span><strong>14,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 1</a></div>
+      <div><span>PACK 2</span><strong>19,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 2</a></div>
+      <div><span>PACK 3</span><strong>34,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 3</a></div>
+      <div><span>PACK 4</span><strong>39,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 4</a></div>
+      <div><span>PACK 5</span><strong>44,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 5</a></div>
+    </div>
+    <div class="secureNote">🔒 Pago seguro · Acceso al curso después de la compra · Sin suscripción mensual de la web</div>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <div class="wrap">
+    <div class="message">
+      <div class="ey">ESCUELA PILI CASTILLO</div>
+      <h2>Tu guitarra. Tu ritmo. Tu camino.</h2>
+      <p>Estamos construyendo una escuela para que aprender guitarra sea algo que disfrutes, no una obligación.</p>
+      <a class="btn primary" href="#packs">VER LOS CURSOS</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Escuela Pili Castillo</strong><br>Guitarra · Flamenco · Pop · Repertorio</div>
+    <div>© 2026 Escuela Pili Castillo</div>
+  </div>
+</footer>
+</body>
+
+</html>
