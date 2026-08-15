@@ -6,135 +6,106 @@
 <title>Estudia guitarra con Pili Castillo</title>
 <style>
 :root{--bg:#070707;--panel:#11100d;--gold:#d7ad63;--gold2:#f0cc83;--text:#f7f3ea;--muted:#b9b4aa;--line:#49371d}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.55}
-a{text-decoration:none;color:inherit}.wrap{max-width:1080px;margin:auto;padding:0 22px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:auto;padding:0 22px}
 nav{position:sticky;top:0;z-index:5;background:#070707ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{width:165px;max-height:58px;object-fit:contain}.nav a{font-size:.85rem;font-weight:800;margin-left:22px}.nav a:hover{color:var(--gold2)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{width:165px;max-height:58px;object-fit:contain}
+.nav a{font-size:.85rem;font-weight:800;margin-left:22px}
+.nav a:hover{color:var(--gold2)}
 .hero{min-height:650px;display:flex;align-items:center;background:radial-gradient(circle at 75% 35%,#3a260f 0,#171109 25%,#070707 62%);border-bottom:1px solid var(--line)}
-.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:80px 0}.ey{color:var(--gold2);font-size:.72rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}.hero h1{font:400 clamp(3.2rem,7vw,6rem)/.96 Georgia,serif;margin:16px 0}.hero h1 span{color:var(--gold2);font-style:italic}.hero p{font-size:1.15rem;color:var(--muted);max-width:600px}.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{display:inline-block;padding:13px 22px;border:1px solid var(--gold);font-weight:900;border-radius:3px}.primary{background:var(--gold);color:#111}.logoBox{min-height:410px;border:1px solid #765824;background:radial-gradient(circle,#21170b,#090909 68%);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:35px}.logoBox img{width:min(90%,390px)}.note{color:var(--gold2);font-size:.72rem;letter-spacing:.2em;margin-top:18px;text-align:center}
-section{padding:70px 0}.center{text-align:center}.center p{color:var(--muted);max-width:650px;margin:10px auto 32px}.goldline{height:2px;width:50px;background:var(--gold);margin:18px auto}
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:4px}.mini h3{font:400 1.35rem Georgia,serif}.mini p{color:var(--muted);margin-bottom:0}
-.packs{background:#0c0b09;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.packgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pack{background:#11100d;border:1px solid var(--line);padding:27px;border-radius:4px}.pack.featured{border:2px solid var(--gold)}.num{color:#111;background:var(--gold);display:inline-block;padding:4px 10px;font-size:.68rem;font-weight:900}.pack h3{font:400 1.5rem Georgia,serif}.pack p,.pack li{color:var(--muted)}.price{font:400 2rem Georgia,serif;color:var(--gold2);margin-top:15px}
-.catalog{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.chip{border:1px solid var(--line);padding:18px;background:#0e0d0b;text-align:center}.chip strong{display:block;font-family:Georgia,serif}.chip span{font-size:.8rem;color:var(--muted)}
-.message{background:linear-gradient(135deg,#191208,#0a0a09);border:1px solid #6d5127;text-align:center;padding:55px 25px}.message h2{font:400 2.5rem Georgia,serif}.message p{color:var(--muted);max-width:620px;margin:10px auto 25px}
-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){.nav a{display:none}.heroGrid,.three,.packgrid,.catalog{grid-template-columns:1fr}.heroGrid{padding:55px 0}.logoBox{min-height:320px;order:-1}.catalog{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.catalog{grid-template-columns:1fr}.hero h1{font-size:3.4rem}}
-</style>
-<style>
-.chip{min-height:155px;display:flex;flex-direction:column;justify-content:space-between}
-.chip strong{font-size:1.05rem}
-.chip b{display:block;color:var(--gold2);font:400 1.35rem Georgia,serif;margin-top:12px}
-</style>
-<style>
-.courseBox{max-width:850px;margin:0 auto;background:#11100d;border:1px solid #765824;border-radius:6px;overflow:hidden;box-shadow:0 25px 70px #0008}
-.courseHead{padding:28px;display:flex;justify-content:space-between;gap:20px;align-items:center;background:linear-gradient(135deg,#1c150b,#0e0d0b);border-bottom:1px solid #49371d}
-.courseHead h3{font:400 1.7rem Georgia,serif;margin:12px 0 5px}.courseHead p{margin:0;color:var(--muted);font-size:.9rem}.coursePrice{font:400 2rem Georgia,serif;color:var(--gold2);white-space:nowrap}
-.lesson{padding:18px 25px;border-bottom:1px solid #2e2417}.lesson>div{display:grid;grid-template-columns:1.2fr 1fr auto;gap:15px;align-items:center}.lesson span{color:var(--muted);font-size:.85rem}.lesson b{color:#8e877a;font-size:.78rem;font-weight:700}
-.supportBox{max-width:850px;margin:25px auto 0;padding:30px;text-align:center;border:1px solid #624a27;background:linear-gradient(135deg,#191208,#0a0a09)}.supportBox h3{font:400 1.7rem Georgia,serif;margin:8px}.supportBox p{color:var(--muted);max-width:650px;margin:0 auto 20px}
-@media(max-width:700px){.courseHead{flex-direction:column;align-items:flex-start}.lesson>div{grid-template-columns:1fr}.lesson b{display:block}}
-</style>
-
-<style>
-.courseSecondary{margin-top:22px}
-.courseSecondary .courseHead{background:#0e0d0b}
-</style>
-
-<style>
+.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:80px 0}
+.ey{color:var(--gold2);font-size:.72rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+.hero h1{font-size:clamp(3.5rem,7vw,6.5rem);margin:0;line-height:1.1}
+.hero h1 span{color:var(--gold2)}
+.buttons{display:flex;gap:15px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 28px;border:1px solid var(--gold);color:var(--gold2);font-size:.78rem;font-weight:900;border-radius:3px;transition:all .3s}
+.btn:hover{background:var(--gold);color:#111}
+.btn.primary{background:var(--gold);color:#111;border-color:var(--gold)}
+.btn.primary:hover{background:var(--gold2)}
+section{padding:70px 0}
+.center{text-align:center}
+.center p{color:var(--muted);max-width:650px;margin:10px auto 32px}
+.goldline{height:2px;width:50px;background:var(--gold);margin:18px auto}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:4px}
+.mini h3{font:400 1.35rem Georgia,serif}
+.mini p{color:var(--muted);font-size:.9rem}
+.packs{background:#0c0b09;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.packgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.pack{background:#11100d;border:1px solid var(--line);padding:20px;text-align:center}
+.pack span{display:block;font-size:.7rem;color:var(--gold);font-weight:900}
+.pack h3{font:400 1.2rem Georgia,serif;margin:10px 0}
+.pack p{color:var(--muted);font-size:.9rem;min-height:40px}
+.pack .price{font:400 1.5rem Georgia,serif;color:var(--gold2);margin:15px 0}
+.packBtn{display:block;border:1px solid var(--gold);padding:10px;color:var(--gold2);font-size:.75rem;font-weight:900;margin-top:10px;transition:all .3s}
+.packBtn:hover{background:var(--gold);color:#111}
+.packBtn.buy{background:var(--gold);color:#111;border-color:var(--gold);font-weight:900}
+.packLink{display:block;font-size:.7rem;color:var(--muted);margin-top:8px}
+.detailCard{max-width:1000px;margin:20px auto;background:#11100d;border:1px solid #49371d;border-radius:4px}
+.detailHead{padding:25px 28px;background:linear-gradient(135deg,#1b140a,#0d0c0a);border-bottom:1px solid #49371d}
+.detailHead span{display:block;font-size:.7rem;color:var(--gold);font-weight:900}
+.detailHead h3{font:400 1.7rem Georgia,serif;margin:10px 0 8px}
+.detailHead p{margin:0;color:var(--muted);font-size:.9rem}
+.detailCols{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #2e2417}
+.detailCols>div{padding:20px;border-right:1px solid #2e2417}
+.detailCols>div:last-child{border-right:0}
+.detailCols h4{margin:0 0 12px 0;font:400 1rem Georgia,serif;color:var(--gold2)}
+.detailCols p{color:var(--muted);font-size:.85rem;margin:0}
+.message{background:linear-gradient(135deg,#191208,#0a0a09);border:1px solid #6d5127;text-align:center;padding:55px 25px;border-radius:4px}
+.message h2{font:400 2.5rem Georgia,serif;margin:15px 0}
+.message p{color:var(--muted);margin:15px 0}
 .aboutSection{padding:80px 0;background:radial-gradient(circle at 80% 35%,#25180a 0,#0b0a08 38%,#070707 72%);border-top:1px solid #49371d;border-bottom:1px solid #49371d}
 .aboutGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
 .aboutText h2{font:400 clamp(2.4rem,5vw,4.2rem)/1.05 Georgia,serif;margin:14px 0;color:var(--gold2)}
-.aboutText p{color:var(--muted);font-size:1.02rem;max-width:620px}
+.aboutText p{color:var(--muted);font-size:1.02rem;max-width:620px;line-height:1.7}
 .aboutText strong{color:var(--gold2)}
-.aboutLine{margin:18px 0}
 .aboutPhotoWrap{position:relative;border:1px solid #765824;background:#0b0b0a;padding:10px;box-shadow:0 25px 80px #000}
-.aboutPhotoWrap:after{content:"";position:absolute;inset:20px;border:1px solid #d7ad6340;pointer-events:none}
-.aboutPhotoWrap img{display:block;width:100%;height:auto;max-height:700px;object-fit:cover;object-position:center}
+.aboutPhotoWrap img{display:block;width:100%;height:auto;max-height:700px;object-fit:cover}
 .quoteBox{margin-top:28px;padding:24px;border:1px solid #765824;background:#0c0b09;color:#f5f0e8;font:italic 1.55rem Georgia,serif;text-align:center}
-.faithBox{margin-top:16px;padding:20px;border:1px solid #624a27;background:linear-gradient(135deg,#191208,#0a0a09);color:var(--gold2);text-align:center;font:1.05rem Georgia,serif}
-.faithBox em{color:#f5f0e8}
-.aboutFeatures{margin-top:35px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #2e2417;background:#0b0b0a}
-.aboutFeatures>div{padding:20px;border-right:1px solid #2e2417}
-.aboutFeatures>div:last-child{border-right:0}
-.aboutFeatures strong{display:block;color:var(--gold2);font-size:.86rem}
-.aboutFeatures span{display:block;color:var(--muted);font-size:.78rem;margin-top:6px}
-@media(max-width:800px){
- .aboutGrid{grid-template-columns:1fr}
- .aboutPhotoWrap{order:-1}
- .aboutFeatures{grid-template-columns:1fr 1fr}
- .aboutFeatures>div:nth-child(2){border-right:0}
- .aboutFeatures>div:nth-child(-n+2){border-bottom:1px solid #2e2417}
-}
-@media(max-width:480px){.aboutFeatures{grid-template-columns:1fr}.aboutFeatures>div{border-right:0;border-bottom:1px solid #2e2417}.aboutFeatures>div:last-child{border-bottom:0}}
-</style>
-
-<style>
-:root{--bg:#060606;--panel:#11100d;--gold:#d7ad63;--gold2:#f3cf8a;--text:#f7f3ea;--muted:#b9b4aa;--line:#49371d}
-body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
-h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
-.navlinks a{font-size:.78rem}
-.hero{min-height:720px}
-.heroGrid{grid-template-columns:1.05fr .95fr;gap:65px}
-.hero h1{font-size:clamp(3.5rem,7vw,6.5rem)}
-.lead{font-size:1.2rem!important;line-height:1.65}
-.heroProof{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
-.heroProof span{border:1px solid #624a27;padding:8px 11px;font-size:.78rem;color:var(--gold2);background:#0e0d0b}
+.faq{border-top:1px solid var(--line);padding-top:70px}
+.faqgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:900px;margin:30px auto 0}
+.faqgrid>div{border:1px solid #2e2417;padding:22px;background:#0b0b0a;border-radius:4px}
+.faqgrid h3{font:400 1.15rem Georgia,serif;margin:0 0 8px;color:var(--gold2)}
+.faqgrid p{color:var(--muted);margin:0;font-size:.9rem}
+.personal{padding:70px 0}
+.personalBox{text-align:center;padding:65px 25px;border:1px solid #765824;background:radial-gradient(circle at 50% 0,#24180b,#0a0a09 65%);border-radius:4px}
+.personalBox h2{max-width:720px;margin:12px auto;font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif}
+.personalBox p{max-width:650px;margin:12px auto 28px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.85rem}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .heroPhoto{position:relative;border:1px solid #765824;padding:10px;background:#0b0b0a;box-shadow:0 25px 80px #000}
 .heroPhoto img{display:block;width:100%;height:560px;object-fit:cover;object-position:center}
-.photoBadge{position:absolute;bottom:26px;left:25px;right:25px;text-align:center;background:#070707e8;border:1px solid #765824;padding:12px;color:var(--gold2);font-size:.72rem;letter-spacing:.16em}
-.results{background:#0c0b09}
-.icon{font-size:1.6rem}
-.method{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.methodGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center}
-.goldline.left{margin-left:0}
-.steps{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.steps div{display:flex;gap:12px;align-items:flex-start;border:1px solid #2e2417;padding:17px;background:#0b0b0a}
-.steps b{color:#111;background:var(--gold);padding:3px 7px;font-size:.7rem}
-.steps span{color:var(--muted);font-size:.9rem}.steps strong{color:var(--text)}
-.methodCard{border:1px solid #765824;background:linear-gradient(135deg,#191208,#0a0a09);padding:34px}
-.methodCard h3{font:400 1.8rem Georgia,serif}.methodCard p{color:var(--muted);border-bottom:1px solid #2e2417;padding-bottom:12px}
-.packgrid.five{grid-template-columns:repeat(5,1fr)}
-.pack{display:flex;flex-direction:column}.pack p{min-height:72px}.packBtn{margin-top:auto;border:1px solid #765824;padding:10px;text-align:center;color:var(--gold2);font-size:.75rem;font-weight:800}
-.courseDetails{padding:40px 0;background:#090806}
-.detailCard{max-width:1000px;margin:20px auto;background:#11100d;border:1px solid #49371d}
-.detailHead{padding:25px 28px;display:flex;justify-content:space-between;gap:20px;align-items:center;background:linear-gradient(135deg,#1b140a,#0d0c0a);border-bottom:1px solid #49371d}
-.detailHead h3{font:400 1.7rem Georgia,serif;margin:10px 0 4px}.detailHead p{margin:0;color:var(--muted)}.detailHead>strong{font:400 2rem Georgia,serif;color:var(--gold2);white-space:nowrap}
-.detailCols{display:grid;grid-template-columns:repeat(3,1fr);gap:0}.detailCols>div{padding:24px;border-right:1px solid #2e2417}.detailCols>div:last-child{border-right:0}.detailCols h4{margin:0 0 10px;color:var(--gold2);font-size:.95rem}.detailCols p{color:var(--muted);font-size:.9rem}
-.personal{padding:70px 0}
-.personalBox{text-align:center;padding:65px 25px;border:1px solid #765824;background:radial-gradient(circle at 50% 0,#24180b,#0a0a09 65%)}
-.personalBox h2{max-width:720px;margin:12px auto}.personalBox p{max-width:650px;margin:12px auto 28px;color:var(--muted)}
-.aboutSection{background:radial-gradient(circle at 20% 30%,#24170a 0,#0b0a08 40%,#070707 75%)}
-.aboutGrid{grid-template-columns:.85fr 1.15fr}
-.aboutPhotoWrap img{max-height:680px}
-.faq{border-top:1px solid var(--line)}
-.faqgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:900px;margin:auto}
-.faqgrid>div{border:1px solid #2e2417;padding:22px;background:#0b0b0a}.faqgrid h3{font:400 1.15rem Georgia,serif;margin:0 0 8px}.faqgrid p{color:var(--muted);margin:0;font-size:.9rem}
-.contact{padding-top:30px}
-@media(max-width:1050px){.packgrid.five{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:800px){.heroGrid,.methodGrid,.aboutGrid{grid-template-columns:1fr}.heroPhoto{order:-1}.heroPhoto img{height:420px}.navlinks{display:none}.steps,.detailCols,.faqgrid{grid-template-columns:1fr}.detailCols>div{border-right:0;border-bottom:1px solid #2e2417}.detailHead{align-items:flex-start;flex-direction:column}.detailHead>strong{font-size:1.7rem}.packgrid.five{grid-template-columns:1fr}}
+.photoBadge{position:absolute;bottom:26px;left:25px;right:25px;text-align:center;background:#070707e8;border:1px solid #765824;padding:12px;color:var(--gold2);font-size:.72rem;letter-spacing:.16em;font-weight:900}
+h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
+@media(max-width:800px){
+  .nav a{display:none}
+  .heroGrid,.packgrid,.aboutGrid{grid-template-columns:1fr}
+  .heroPhoto{order:-1}
+  .heroPhoto img{height:420px}
+  .three{grid-template-columns:1fr}
+  .faqgrid{grid-template-columns:1fr}
+  .detailCols{grid-template-columns:1fr}
+  .detailCols>div{border-right:0;border-bottom:1px solid #2e2417}
+  .detailCols>div:last-child{border-bottom:0}
+  .aboutPhotoWrap{order:-1}
+}
+@media(max-width:480px){
+  .packgrid{grid-template-columns:1fr}
+  .hero h1{font-size:3.4rem}
+  .buttons{flex-direction:column}
+  .btn{width:100%;text-align:center}
+}
 </style>
-
-
-<style>
-.packBtn.buy{background:var(--gold);color:#111;border-color:var(--gold);font-weight:900}
-.packLink{display:block;text-align:center;color:var(--muted);font-size:.72rem;margin-top:9px}
-.purchase{padding:80px 0;background:#0c0b09;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.purchaseGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:1050px;margin:30px auto 18px}
-.purchaseGrid>div{border:1px solid #49371d;background:#11100d;padding:22px;text-align:center}
-.purchaseGrid span{display:block;color:var(--gold2);font-size:.72rem;font-weight:900;letter-spacing:.1em}
-.purchaseGrid strong{display:block;font:400 1.65rem Georgia,serif;color:#f7f3ea;margin:10px 0 18px}
-.purchaseGrid .btn{width:100%;padding:10px 8px;font-size:.72rem}
-.secureNote{text-align:center;color:var(--muted);font-size:.82rem;margin-top:20px}
-@media(max-width:1050px){.purchaseGrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:700px){.purchaseGrid{grid-template-columns:1fr}}
-</style>
-
 </head>
 
 <body>
 <nav>
   <div class="wrap nav">
-    <a href="#inicio"><img class="logo" src="logo-pili-castillo.png" alt="Escuela Pili Castillo"></a>
+    <a href="#inicio"><img class="logo" src="Logo.png" alt="Escuela Pili Castillo"></a>
     <div class="navlinks">
       <a href="#metodo">MI MÉTODO</a>
       <a href="#packs">CURSOS</a>
@@ -157,7 +128,7 @@ h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
       </div>
     </div>
     <div class="heroPhoto">
-      <img src="pili-castillo.jpg" alt="Pili Castillo con su guitarra">
+      <img src="Foto.jpg" alt="Pili Castillo con su guitarra">
       <div class="photoBadge">APRENDE · PRACTICA · TOCA</div>
     </div>
   </div>
@@ -180,28 +151,28 @@ h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
 </section>
 
 <section id="metodo" class="method">
-  <div class="wrap">
-    <div class="methodGrid">
+  <div class="wrap" style="padding:70px 0">
+    <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:center">
       <div>
         <div class="ey">MI MÉTODO</div>
         <h2>Aprende · Practica · Toca · Avanza</h2>
-        <div class="goldline left"></div>
-        <p>He creado esta escuela para que no tengas que limitarte a memorizar ejercicios. Quiero que entiendas lo que haces y que puedas llevarlo a la guitarra.</p>
-        <div class="steps">
-          <div><b>01</b><span><strong>Aprende</strong> una técnica de forma clara.</span></div>
-          <div><b>02</b><span><strong>Practica</strong> con ejercicios concretos.</span></div>
-          <div><b>03</b><span><strong>Toca</strong> aplicándolo a ritmos y canciones.</span></div>
-          <div><b>04</b><span><strong>Avanza</strong> hacia nuevos niveles y recursos.</span></div>
+        <div class="goldline" style="margin-left:0"></div>
+        <p style="color:var(--muted)">He creado esta escuela para que no tengas que limitarte a memorizar ejercicios. Quiero que entiendas lo que haces y que puedas llevarlo a la guitarra.</p>
+        <div style="margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="display:flex;gap:12px;align-items:flex-start;border:1px solid #2e2417;padding:17px;background:#0b0b0a"><b style="color:#111;background:var(--gold);padding:3px 7px;font-size:.7rem">01</b><span style="color:var(--muted);font-size:.9rem"><strong>Aprende</strong> una técnica de forma clara.</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;border:1px solid #2e2417;padding:17px;background:#0b0b0a"><b style="color:#111;background:var(--gold);padding:3px 7px;font-size:.7rem">02</b><span style="color:var(--muted);font-size:.9rem"><strong>Practica</strong> con ejercicios concretos.</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;border:1px solid #2e2417;padding:17px;background:#0b0b0a"><b style="color:#111;background:var(--gold);padding:3px 7px;font-size:.7rem">03</b><span style="color:var(--muted);font-size:.9rem"><strong>Toca</strong> aplicándolo a ritmos y canciones.</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;border:1px solid #2e2417;padding:17px;background:#0b0b0a"><b style="color:#111;background:var(--gold);padding:3px 7px;font-size:.7rem">04</b><span style="color:var(--muted);font-size:.9rem"><strong>Avanza</strong> hacia nuevos niveles y recursos.</span></div>
         </div>
       </div>
-      <div class="methodCard">
+      <div style="border:1px solid #765824;background:linear-gradient(135deg,#191208,#0a0a09);padding:34px;border-radius:4px">
         <div class="ey">EN CADA CURSO</div>
-        <h3>Tu camino está marcado</h3>
-        <p>🎥 Clases grabadas</p>
-        <p>🎼 Material y TAB cuando corresponda</p>
-        <p>🎯 Ejercicios para practicar</p>
-        <p>🎵 Repertorio para aplicar lo aprendido</p>
-        <p>💬 Acompañamiento y “Una duda con Pili”</p>
+        <h3 style="font:400 1.8rem Georgia,serif">Tu camino está marcado</h3>
+        <p style="color:var(--muted);border-bottom:1px solid #2e2417;padding-bottom:12px">🎥 Clases grabadas</p>
+        <p style="color:var(--muted);border-bottom:1px solid #2e2417;padding-bottom:12px">🎼 Material y TAB cuando corresponda</p>
+        <p style="color:var(--muted);border-bottom:1px solid #2e2417;padding-bottom:12px">🎯 Ejercicios para practicar</p>
+        <p style="color:var(--muted);border-bottom:1px solid #2e2417;padding-bottom:12px">🎵 Repertorio para aplicar lo aprendido</p>
+        <p style="color:var(--muted)">💬 Acompañamiento y "Una duda con Pili"</p>
       </div>
     </div>
   </div>
@@ -216,90 +187,122 @@ h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
       <p>Cinco etapas para acompañarte desde tus primeros acordes hasta la armonía y un repertorio más avanzado.</p>
     </div>
 
-    <div class="packgrid five">
-      <article class="pack featured">
-        <span class="num">PACK 1</span>
-        <h3>Primeros pasos con la guitarra</h3>
-        <p>🎸 Técnica · 🥁 Ritmos · 🎵 Primeras canciones</p>
+    <div class="packgrid">
+      <article class="pack">
+        <span>PACK 1</span>
+        <h3>Primeros pasos</h3>
+        <p>Técnica · Ritmos · Primeras canciones</p>
         <div class="price">14,99 €</div>
-        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 14,99 €</a><a class="packLink" href="#pack1">Ver contenido</a>
+        <a class="packBtn buy" href="#pack1">COMPRAR · 14,99 €</a>
+        <a class="packLink" href="#pack1">Ver contenido</a>
       </article>
       <article class="pack">
-        <span class="num">PACK 2</span>
-        <h3>Ritmos y palos flamencos</h3>
-        <p>🔥 Sevillanas · Tanguillos · Alegrías · Rumbas</p>
+        <span>PACK 2</span>
+        <h3>Palos flamencos</h3>
+        <p>Sevillanas · Tanguillos · Alegrías · Rumbas</p>
         <div class="price">19,99 €</div>
-        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 19,99 €</a><a class="packLink" href="#pack2">Ver contenido</a>
+        <a class="packBtn buy" href="#pack2">COMPRAR · 19,99 €</a>
+        <a class="packLink" href="#pack2">Ver contenido</a>
       </article>
       <article class="pack">
-        <span class="num">PACK 3</span>
-        <h3>Nivel medio y avanzado</h3>
-        <p>🎼 Repertorio flamenco y grandes guitarristas</p>
+        <span>PACK 3</span>
+        <h3>Nivel avanzado</h3>
+        <p>Repertorio flamenco y grandes guitarristas</p>
         <div class="price">34,99 €</div>
-        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 34,99 €</a><a class="packLink" href="#pack3">Ver contenido</a>
+        <a class="packBtn buy" href="#pack3">COMPRAR · 34,99 €</a>
+        <a class="packLink" href="#pack3">Ver contenido</a>
       </article>
       <article class="pack">
-        <span class="num">PACK 4</span>
-        <h3>Armonía aplicada a canciones</h3>
-        <p>🎹 Aprende armonía a través del repertorio</p>
+        <span>PACK 4</span>
+        <h3>Armonía aplicada</h3>
+        <p>Aprende armonía a través del repertorio</p>
         <div class="price">39,99 €</div>
-        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 39,99 €</a><a class="packLink" href="#pack4">Ver contenido</a>
+        <a class="packBtn buy" href="#pack4">COMPRAR · 39,99 €</a>
+        <a class="packLink" href="#pack4">Ver contenido</a>
       </article>
       <article class="pack">
-        <span class="num">PACK 5</span>
+        <span>PACK 5</span>
         <h3>Grandes canciones</h3>
-        <p>🌎 Pop internacional y rock para tocar</p>
+        <p>Pop internacional y rock para tocar</p>
         <div class="price">44,99 €</div>
-        <a class="packBtn buy" href="#comprar">COMPRAR PACK · 44,99 €</a><a class="packLink" href="#pack5">Ver contenido</a>
+        <a class="packBtn buy" href="#pack5">COMPRAR · 44,99 €</a>
+        <a class="packLink" href="#pack5">Ver contenido</a>
       </article>
     </div>
   </div>
 </section>
 
-<section class="courseDetails">
-  <div class="wrap">
-    <div id="pack1" class="detailCard">
-      <div class="detailHead"><div><span class="num">PACK 1</span><h3>Primeros pasos con la guitarra</h3><p>Construye una base sólida y empieza a tocar canciones.</p></div><strong>14,99 €</strong></div>
-      <div class="detailCols">
-        <div><h4>🎯 Técnica fundamental</h4><p>Acordes básicos · Acordes básicos con ritmo · Arpegios principales · Estudios de arpegios · Ejercicios de agilidad · Escala pentatónica · Escalas flamencas · Abanico · Golpe de pulgar · Ligados flamencos</p></div>
-        <div><h4>🥁 Ritmos</h4><p>Ritmo de pop · Ritmo de balada · Ritmo de rock · Sevillanas · Ejercicios de rasgueo por sevillanas</p></div>
-        <div><h4>🎵 Primeras canciones</h4><p>Zombie — The Cranberries · Triana · Paula Rojo · Aitana · Malú</p></div>
-      </div>
+<section id="pack1" class="detailCard">
+  <div style="max-width:1000px;margin:50px auto">
+    <div class="detailHead">
+      <span>PACK 1</span>
+      <h3>Primeros pasos con la guitarra</h3>
+      <p>Construye una base sólida y empieza a tocar canciones.</p>
     </div>
-
-    <div id="pack2" class="detailCard">
-      <div class="detailHead"><div><span class="num">PACK 2</span><h3>Ritmos y palos flamencos</h3><p>Empieza a entrar en el lenguaje del flamenco.</p></div><strong>19,99 €</strong></div>
-      <div class="detailCols">
-        <div><h4>💃 Sevillanas</h4><p>Sevillanas · Sevillanas con punteo</p></div>
-        <div><h4>🎶 Tanguillos de Cádiz</h4><p>Ritmo de tanguillos · Punteo de tanguillos</p></div>
-        <div><h4>🌹 Alegrías</h4><p>Ritmo de alegrías · Falseta de alegrías</p></div>
-        <div><h4>🔥 Rumbas</h4><p>Ritmo de rumba · Arpegios y recursos para rumba · Popurrí de rumbas</p></div>
-      </div>
+    <div class="detailCols">
+      <div><h4>🎯 Técnica fundamental</h4><p>Acordes básicos · Arpegios principales · Estudios de agilidad · Escala pentatónica</p></div>
+      <div><h4>🥁 Ritmos</h4><p>Ritmo de pop · Ritmo de balada · Ritmo de rock · Sevillanas</p></div>
+      <div><h4>🎵 Primeras canciones</h4><p>Zombie — The Cranberries · Triana · Paula Rojo · Aitana</p></div>
     </div>
+  </div>
+</section>
 
-    <div id="pack3" class="detailCard">
-      <div class="detailHead"><div><span class="num">PACK 3</span><h3>Nivel medio y avanzado</h3><p>Repertorio y recursos para seguir creciendo.</p></div><strong>34,99 €</strong></div>
-      <div class="detailCols">
-        <div><h4>🎼 Repertorio</h4><p>Entre dos aguas — Paco de Lucía · Río Ancho — Paco de Lucía · Tico Tico — Paco de Lucía · Roma — Vicente Amigo · Tres notas para decir te quiero — Vicente Amigo</p></div>
-        <div><h4>🔥 Falsetas y recursos</h4><p>Tangos y falsetas — Tomatito · Falsetas por bulerías — Tomatito · Agua Marina — Paco Cepero</p></div>
-      </div>
+<section id="pack2" class="detailCard">
+  <div style="max-width:1000px;margin:0 auto">
+    <div class="detailHead">
+      <span>PACK 2</span>
+      <h3>Ritmos y palos flamencos</h3>
+      <p>Empieza a entrar en el lenguaje del flamenco.</p>
     </div>
-
-    <div id="pack4" class="detailCard">
-      <div class="detailHead"><div><span class="num">PACK 4</span><h3>Armonía aplicada a canciones</h3><p>Entiende la armonía mientras trabajas repertorio.</p></div><strong>39,99 €</strong></div>
-      <div class="detailCols">
-        <div><h4>🎹 Repertorio español</h4><p>Alejandro Sanz · Manuel Carrasco · La Barbería del Sur · Niña Pastori</p></div>
-        <div><h4>🎤 Canción melódica</h4><p>Armando Manzanero · Luis Miguel</p></div>
-        <div><h4>🧠 Armonía</h4><p>Acordes armonizados · Progresiones · Tonalidades · Recursos para enriquecer acompañamientos</p></div>
-      </div>
+    <div class="detailCols">
+      <div><h4>💃 Sevillanas</h4><p>Sevillanas básicas · Sevillanas con punteo</p></div>
+      <div><h4>🎶 Tanguillos de Cádiz</h4><p>Ritmo de tanguillos · Punteo de tanguillos</p></div>
+      <div><h4>🔥 Rumbas</h4><p>Ritmo de rumba · Arpegios para rumba</p></div>
     </div>
+  </div>
+</section>
 
-    <div id="pack5" class="detailCard">
-      <div class="detailHead"><div><span class="num">PACK 5</span><h3>Grandes canciones</h3><p>Repertorio internacional y rock con acordes que todo guitarrista conoce.</p></div><strong>44,99 €</strong></div>
-      <div class="detailCols">
-        <div><h4>🎤 Pop internacional</h4><p>Queen · Michael Jackson · Lady Gaga · Shakira · Bonnie Tyler · Tina Turner</p></div>
-        <div><h4>🎸 Rock</h4><p>Bon Jovi · AC/DC · Extremoduro · Nirvana · Guns N’ Roses</p></div>
-      </div>
+<section id="pack3" class="detailCard">
+  <div style="max-width:1000px;margin:0 auto">
+    <div class="detailHead">
+      <span>PACK 3</span>
+      <h3>Nivel medio y avanzado</h3>
+      <p>Repertorio y recursos para seguir creciendo.</p>
+    </div>
+    <div class="detailCols">
+      <div><h4>🎼 Repertorio</h4><p>Entre dos aguas — Paco de Lucía · Tico Tico · Roma — Vicente Amigo</p></div>
+      <div><h4>🔥 Falsetas</h4><p>Tangos y falsetas — Tomatito · Falsetas por bulerías</p></div>
+      <div><h4>⭐ Maestros</h4><p>Estudio de grandes guitarristas y su técnica</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pack4" class="detailCard">
+  <div style="max-width:1000px;margin:0 auto">
+    <div class="detailHead">
+      <span>PACK 4</span>
+      <h3>Armonía aplicada a canciones</h3>
+      <p>Entiende la armonía mientras trabajas repertorio.</p>
+    </div>
+    <div class="detailCols">
+      <div><h4>🎹 Repertorio español</h4><p>Alejandro Sanz · Manuel Carrasco · Niña Pastori</p></div>
+      <div><h4>🎤 Canción melódica</h4><p>Armando Manzanero · Luis Miguel clásicos</p></div>
+      <div><h4>🧠 Armonía</h4><p>Acordes armonizados · Progresiones · Tonalidades</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pack5" class="detailCard">
+  <div style="max-width:1000px;margin:0 auto">
+    <div class="detailHead">
+      <span>PACK 5</span>
+      <h3>Grandes canciones</h3>
+      <p>Repertorio internacional y rock con acordes clásicos.</p>
+    </div>
+    <div class="detailCols">
+      <div><h4>🎤 Pop internacional</h4><p>Queen · Michael Jackson · Lady Gaga · Shakira</p></div>
+      <div><h4>🎸 Rock</h4><p>Bon Jovi · AC/DC · Extremoduro · Nirvana</p></div>
+      <div><h4>🌍 Clásicos</h4><p>Canciones que todos los guitarristas deben conocer</p></div>
     </div>
   </div>
 </section>
@@ -317,56 +320,39 @@ h2{font:400 clamp(2.2rem,5vw,3.8rem)/1.05 Georgia,serif;margin:10px 0}
 
 <section id="sobre-mi" class="aboutSection">
   <div class="wrap aboutGrid">
-    <div class="aboutPhotoWrap"><img src="pili-castillo.jpg" alt="Pili Castillo con su guitarra"></div>
+    <div class="aboutPhotoWrap"><img src="Foto.jpg" alt="Pili Castillo con su guitarra"></div>
     <div class="aboutText">
       <div class="ey">SOBRE MÍ</div>
       <h2>Hola, soy Pili Castillo.</h2>
-      <div class="goldline left"></div>
+      <div class="goldline left" style="margin-left:0"></div>
       <p>Soy guitarrista y profesora de guitarra. He creado esta escuela para compartir contigo mi forma de <strong>aprender y disfrutar</strong> de la música.</p>
       <p>Quiero que puedas empezar desde cero, mejorar tu técnica, descubrir el flamenco y tocar canciones que realmente te gustan, sin importar tu edad o tu nivel.</p>
       <p>Mi objetivo es que cada clase sea práctica, clara y cercana.</p>
-      <div class="quoteBox">“Nunca es tarde para empezar a hacer música.”</div>
-      <div class="faithBox">Dios me dio la música como un regalo,<br><em>y hoy quiero compartir ese regalo contigo.</em></div>
+      <div class="quoteBox">"Nunca es tarde para empezar a hacer música."</div>
     </div>
   </div>
 </section>
 
 <section id="faq" class="faq">
   <div class="wrap">
-    <div class="center"><div class="ey">ANTES DE EMPEZAR</div><h2>Preguntas frecuentes</h2><div class="goldline"></div></div>
+    <div class="center">
+      <div class="ey">ANTES DE EMPEZAR</div>
+      <h2>Preguntas frecuentes</h2>
+      <div class="goldline"></div>
+    </div>
     <div class="faqgrid">
       <div><h3>¿Puedo empezar desde cero?</h3><p>Sí. El Pack 1 está pensado para construir una base desde los primeros acordes.</p></div>
       <div><h3>¿Necesito experiencia previa?</h3><p>No. Puedes avanzar siguiendo el recorrido de los packs.</p></div>
       <div><h3>¿Las clases son grabadas?</h3><p>La escuela está pensada para aprender con clases grabadas y material de apoyo.</p></div>
       <div><h3>¿Puedo avanzar a mi ritmo?</h3><p>Sí. Tú decides cuándo practicar y cuándo pasar al siguiente contenido.</p></div>
-      <div><h3>¿Habrá material para practicar?</h3><p>Sí, según cada clase y pack habrá material de apoyo y TAB cuando corresponda.</p></div>
-      <div><h3>¿Y si me atasco?</h3><p>Podrás consultar la opción “Una duda con Pili” cuando esté disponible.</p></div>
+      <div><h3>¿Habrá material para practicar?</h3><p>Sí, según cada clase habrá material de apoyo y TAB cuando corresponda.</p></div>
+      <div><h3>¿Y si me atasco?</h3><p>Podrás consultar la opción "Una duda con Pili" cuando esté disponible.</p></div>
     </div>
-  </div>
-</section>
-
-
-<section id="comprar" class="purchase">
-  <div class="wrap">
-    <div class="center">
-      <div class="ey">CUANDO ESTÉS PREPARADO/A</div>
-      <h2>Elige tu pack y empieza</h2>
-      <div class="goldline"></div>
-      <p>Los botones de compra quedarán conectados al sistema de pago cuando configuremos la cuenta de venta. No habrá cuota mensual por la web.</p>
-    </div>
-    <div class="purchaseGrid">
-      <div><span>PACK 1</span><strong>14,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 1</a></div>
-      <div><span>PACK 2</span><strong>19,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 2</a></div>
-      <div><span>PACK 3</span><strong>34,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 3</a></div>
-      <div><span>PACK 4</span><strong>39,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 4</a></div>
-      <div><span>PACK 5</span><strong>44,99 €</strong><a href="#" class="btn primary">COMPRAR PACK 5</a></div>
-    </div>
-    <div class="secureNote">🔒 Pago seguro · Acceso al curso después de la compra · Sin suscripción mensual de la web</div>
   </div>
 </section>
 
 <section id="contacto" class="contact">
-  <div class="wrap">
+  <div class="wrap" style="padding:70px 0">
     <div class="message">
       <div class="ey">ESCUELA PILI CASTILLO</div>
       <h2>Tu guitarra. Tu ritmo. Tu camino.</h2>
